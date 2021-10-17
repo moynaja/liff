@@ -71,9 +71,9 @@
     function getContext() {
       document.getElementById("type").append(liff.getContext().type)
       document.getElementById("viewType").append(liff.getContext().viewType)
-      document.getElementById("utouId").append(profile.utouId)
-      document.getElementById("roomId").append(profile.roomId)
-      document.getElementById("groupId").append(profile.groupId)
+      document.getElementById("utouId").append(liff.getContex().utouId)
+      document.getElementById("roomId").append(liff.getContex().roomId)
+      document.getElementById("groupId").append(liff.getContex().groupId)
     }
 
     async function getUserProfile() {
@@ -82,7 +82,7 @@
       document.getElementById("userId").append(profile.userId)
       document.getElementById("statusMessage").append(profile.statusMessage)
       document.getElementById("displayName").append(profile.displayName)
-      document.getElementById("decodedIDToken").append(liff.decodedIDToken().email) 
+      document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email) 
     }
 
 
